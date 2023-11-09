@@ -1,7 +1,7 @@
 package com.example.myblog.entity;
 
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -29,7 +29,7 @@ public class Member {
 
     private String role;
 
-    @CreationTimestamp
+    @CreatedDate
     private Timestamp createdDate;
 
 }
